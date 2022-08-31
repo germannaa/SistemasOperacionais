@@ -18,14 +18,15 @@ serv_socket.close()
 
 import socket
  
-HOST = '127.0.0.1 '     # Endereco IP do Servidor
+HOST = '127.0.0.1'     # Endereco IP do Servidor
 PORT = 2345      # Porta que o Servidor está
  
 # Criando a conexão
 tcp = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 destino = (HOST, PORT)
-tcp.connect(destino)
- 
+tcp.bind(destino)
+tcp.listen(1)
+
 print('\nDigite suas mensagens')
 print('Para sair use CTRL+X\n')
  
@@ -40,3 +41,4 @@ while mensagem != '\x18':
 # Fechando o Socket
 
     tcp.close()
+
