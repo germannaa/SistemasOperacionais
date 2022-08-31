@@ -35,8 +35,8 @@ mensagem = input()
  
 # Enviando a mensagem para o Servidor TCP através da conexão
 while mensagem != '\x18':
-    tcp.send(str(mensagem).encode())
-    mensagem = input()
+tcp.send(str(mensagem).decode("utf-8"))
+mensagem = input()
  
 # Fechando o Socket
 
