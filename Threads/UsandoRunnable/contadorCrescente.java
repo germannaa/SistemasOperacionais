@@ -9,12 +9,12 @@ public class ContadorCrescente implements java.lang.Runnable {
     // inicializador da MinhaThread 
     public ContadorCrescente () {
        // this.limite = limite; 
-        this.contador = 0;
+        this.contador = contador;
     }
 
     // área de código da Thread
     public void run() {
-        for (int contador = 0; contador<=100; contador++ ){
+        for (contador = 0; contador<=100; contador++ ){
             System.out.println( Thread.currentThread().getName() + "\t" + contador );
             contador+=1;
         }
