@@ -1,0 +1,7 @@
+Crie um programa cliente/servidor que se comunique por meio de Socket, conforme os requisítos descrito
+a seguir:
+a) O servidor deve escutar em uma determinada porta e imprimir no console a mensagem recebida;
+b) Se a mensagem for “exit”, o servidor deve encerrar o programa
+c) O cliente deve conectar no servidor e enviar várias mensagens
+d) Podem utilizar qualquer linguagem de programação (Java, Python, C...).
+e) Você irá apresentar sua implementação que será avaliada individualmente (5 a 10 minutos).
