@@ -16,7 +16,7 @@ public class Corrida extends Thread{
 @Override
 public void run(){
     for(int i = trajeto; i > 0; i--){
-        System.out.println(String.format("Faltam %d para o %s", i, nome));
+        System.out.println(String.format("Faltam %d para o %s\n", i, nome));
         
     try {
         System.out.printf("%s está descansando", nome);
